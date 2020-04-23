@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <title>Tailwind Responsive Navbar</title>
+  <style>
+    #menu-toggle:checked + #desktop-menu {
+      display: block;
+      position: absolute;
+      top: 3rem;
+      left: 0;
+    }
+
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="lg:px-16 px-6 z-50 bg-white flex lg:flex-no-wrap fixed top-0 flex-wrap bg-white border-b border-gray-200 w-full shadow-md">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="#">
+        <svg class="w-10 h-10 block" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <title>Tailwind CSS</title>
+          <path d="M13.5 11.1C15.3 3.9 19.8.3 27 .3c10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 27.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" transform="translate(5 16)" fill="url(#logoMarkGradient)" fill-rule="evenodd"></path>
+          <defs>
+            <linearGradient x1="0%" y1="0%" y2="100%" id="logoMarkGradient">
+              <stop stop-color="#2298BD"></stop>
+              <stop offset="1" stop-color="#0ED7B5"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+    </div>
+      <label for="menu-toggle" class="relative z-20 text-gray-500 my-4 lg:hidden block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </label>
+      <input type="checkbox" class="hidden relative z-20" id="menu-toggle"/>
+      
+
+      <div class="hidden lg:flex lg:shadow-none shadow-lg lg:items-center relative z-10 justify-end lg:width-auto w-full" id="desktop-menu">
+        <nav>
+          <ul class="lg:flex bg-white lg:border-b-0 border-b border-gray-200 justify-between text-base text-gray-600 pt-4 lg:pt-0">
+            <li>
+              <a href="#" class="nav-link">Features</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Documentation</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Support</a>
+            </li>
+            <a href="#" class="lg:ml-4 flex items-center justify-start lg:py-0 lg:p-0 p-8 pt-4 cursor-pointer">
+              <img src="img/pg-headshot.jpg" class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" alt="Headshot">
+            </a>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+  <div class="max-w-3xl mx-auto py-16 flex flex-wrap">
+    <div class="px-4 lg:w-1/2 w-full">
+      <div class="card">
+        <h1 class="text-2xl font-medium mb-2">Tailwind Responsive Navbar</h1>
+        <h2 class="text-sm text-indigo-400 mb-4 uppercase">A responsive navbar built with Tailwind CSS</h2>
+        <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi facilis iste officiis! Repellat debitis corrupti nostrum reprehenderit, laborum sequi iure? Iste, voluptatibus deleniti. Totam placeat voluptates possimus praesentium sint.</p>
+      </div>
+    </div>
+
+    <div class="px-4 lg:w-1/2 w-full">
+      <div class="card">
+        <h1 class="text-2xl font-medium mb-2">Tailwind Responsive Navbar</h1>
+        <h2 class="text-sm text-indigo-400 mb-4 uppercase">A responsive navbar built with Tailwind CSS</h2>
+        <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi facilis iste officiis! Repellat debitis corrupti nostrum reprehenderit, laborum sequi iure? Iste, voluptatibus deleniti. Totam placeat voluptates possimus praesentium sint.</p>
+      </div>
+    </div>
+
+    <div class="px-4 lg:w-1/2 w-full">
+      <div class="card">
+        <h1 class="text-2xl font-medium mb-2">Tailwind Responsive Navbar</h1>
+        <h2 class="text-sm text-indigo-400 mb-4 uppercase">A responsive navbar built with Tailwind CSS</h2>
+        <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi facilis iste officiis! Repellat debitis corrupti nostrum reprehenderit, laborum sequi iure? Iste, voluptatibus deleniti. Totam placeat voluptates possimus praesentium sint.</p>
+      </div>
+    </div>
+
+    <div class="px-4 lg:w-1/2 w-full">
+      <div class="card">
+        <h1 class="text-2xl font-medium mb-2">Tailwind Responsive Navbar</h1>
+        <h2 class="text-sm text-indigo-400 mb-4 uppercase">A responsive navbar built with Tailwind CSS</h2>
+        <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi facilis iste officiis! Repellat debitis corrupti nostrum reprehenderit, laborum sequi iure? Iste, voluptatibus deleniti. Totam placeat voluptates possimus praesentium sint.</p>
+      </div>
+    </div>
+  
+</body>
+</html>

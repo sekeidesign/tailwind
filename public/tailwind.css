@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+
+.card {
+    @apply max-w-3xl relative z-0 bg-white rounded-lg my-4 p-8 shadow-md border border-gray-200 cursor-pointer transition duration-500;
+  }
+
+.card:hover {
+    @apply shadow-xl transform -translate-y-1;
+}
+
+.nav-link {
+    @apply  text-sm py-2 px-8 block border-b-2 border-transparent;
+}
+
+.nav-link:hover {
+    @apply border-indigo-400;
+}
+
+@screen lg {
+    .nav-link {
+        @apply p-4
+    }
+}
+
+@tailwind utilities;
